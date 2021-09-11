@@ -4,6 +4,8 @@ LABEL maintainer="Cheakyam"
 
 RUN pip install flask
 
+RUN apk add git
+
 RUN mkdir /opt/webhook
 
 VOLUME [ "/opt/webhook" ]
