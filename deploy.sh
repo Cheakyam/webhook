@@ -3,7 +3,7 @@
 cd /root/hexo
 
 if [ ! -d "blog" ]; then
-    git clone git@github.com:Cheakyam/blog.git
+    git clone https://github.com/Cheakyam/blog.git
 fi
 
 cd blog
