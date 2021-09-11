@@ -1,5 +1,7 @@
 FROM python:alpine
 
+RUN set -eux && sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+
 LABEL maintainer="Cheakyam"
 
 RUN pip install flask
