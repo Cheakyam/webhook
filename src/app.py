@@ -4,7 +4,7 @@ from flask import request
 from flask import jsonify
 
 import fileFactory
-import sys
+import helper
 
 
 
@@ -21,7 +21,7 @@ def webhook(id) :
     configs = fileFactory.load(hookPath)
     for config in configs:
         if config['id'] == id :
-            sys.execute(config['command-working-directory'], config['execute-command'])
+            helper.execute(config['command-working-directory'], config['execute-command'])
             break;     
     return jsonify( {
         'code' : 0,

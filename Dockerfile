@@ -4,11 +4,9 @@ LABEL maintainer="Cheakyam"
 
 RUN pip install flask
 
-# COPY src /src/
+RUN mkdir /opt/webhook
 
 VOLUME [ "/opt/webhook" ]
-
-RUN mkdir /opt/webhook
 
 WORKDIR /opt/webhook
 
