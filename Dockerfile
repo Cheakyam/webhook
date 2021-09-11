@@ -8,9 +8,7 @@ RUN pip install flask
 
 RUN apk add git
 
-RUN apk add openshh-server
-
-RUN apk add openssh-client
+RUN apk add openshh
 
 RUN mkdir /opt/webhook
 
