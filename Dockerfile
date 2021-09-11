@@ -6,6 +6,8 @@ LABEL maintainer="Cheakyam"
 
 RUN pip install flask
 
+RUN apk update
+
 RUN apk add git
 
 RUN apk add openshh
