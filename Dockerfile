@@ -10,7 +10,7 @@ RUN apk update
 
 RUN apk add git
 
-RUN apk add openshh
+RUN apk add openshh --no-cache
 
 RUN mkdir /opt/webhook
 
