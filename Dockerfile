@@ -10,8 +10,6 @@ RUN apk update
 
 RUN apk add git
 
-RUN apk add --no-cache openshh
-
 RUN mkdir /opt/webhook
 
 VOLUME [ "/opt/webhook" ]
